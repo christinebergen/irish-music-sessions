@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nanaimo Traditional Irish Music Sessions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body class="bg-[#4D5D53] text-[#CEE1D5]">
+    <nav
+      class="bg-white text-[#4D5D53] p-8 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="index.html" class="flex items-center">
+          <img src="harp.png" class="h-12 mr-3" alt="harp" />
+          <!-- image from: https://www.pdclipart.org/displayimage.php?album=80&pos=96 -->
+          <h1
+            class="text-l md:text-2xl lg:text-3xl font-semibold whitespace-nowrap dark:text-white"
+          >
+            Nanaimo Traditional Irish Music Sessions
+          </h1>
+        </a>
+        <div class="flex md:order-2">
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 text-xl text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block py-2 pl-3 pr-4 text-xl text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="block py-2 pl-3 pr-4 text-xl text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Upcoming Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="tunebook.html"
+                class="block py-2 pl-3 pr-4 text-xl text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Tune Book</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 pl-3 pr-4 text-xl text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="flex justify-center">
+      <img src="linebreak.png" alt="the first line from the irish tune called John Ryan's" class="pt-52 w-full md:w-2/3" />
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-center">
+      <p class="text-left md:text-right font-semibold p-10 pt-32">
+        Our purpose is to hold Traditional Irish Music Sessions at local venues
+        in the Nanaimo area.
+        <br />
+        <br />
+        These sessions are modeled after the Traditional Irish Music Sessions
+        found in pubs all over Ireland. The format is fairly informal, usually
+        just a bunch of musicians sitting together and playing some tunes.
+        <br />
+        <br />
+        If you're interested in playing with us, we suggest coming to a session
+        to hear what we sound like. With thousands of Traditional Irish Tunes to
+        choose from, we have developed a core list of tunes to help you get
+        started. Visit the Tune Book page to see a list of some of the tunes we play.
+        <br />
+        <br />
+        No two sessions are the same as we have a few regular muscians but also
+        various musicians who join us when they can, and a new face or two
+        almost every session. The variety of tunes also varies greatly depending
+        on the musicians who show up, and that's something we love about our
+        sessions!
+        <br />
+        <br />
+        Our sessions are open to all musicians who already play or want to learn
+        to play Irish Traditional Music, although traditional Irish instruments
+        are preferred. If you're interested in joining us come watch a session
+        and say hello! We are a friendly bunch and always welcoming to new
+        faces.
+      </p>
+
+      <div class="flex flex-col items-center justify-center">
+        <img class="pt-16 p-10" src="musicians.jpg" />
+        <img class="w-3/4 p-10" src="musicians2.jpg" />
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center pt-16 text-3xl font-bold text-center mb-8"
+    >
+      <h2 class="pb-10">The Irish Trad Session Explained:</h2>
+
+      <iframe
+        src="https://blog.mcneelamusic.com/the-irish-trad-session-explained/"
+        class="w-3/4 pb-32"
+        height="700"
+        title="The Irish Trad Session Explained"
+      ></iframe>
+    </div>
+
+    <footer
+      id="footer"
+      class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"
+    >
+      <div class="flex justify-between items-center w-full">
+        <span class="text-sm text-[#4D5D53] sm:text-center dark:text-gray-400"
+          >© 2023
+          <a
+            href="https://www.facebook.com/nanaimoirishmusic"
+            class="hover:underline"
+            >Nanaimo Traditional Irish Music Sessions</a
+          >. All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <div class="flex flex-wrap justify-center gap-2">
+              <a
+                href="https://www.facebook.com/nanaimoirishmusic"
+                target="_blank"
+              >
+                <button
+                  class="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                >
+                  <svg
+                    class="w-5 h-5 fill-current"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg></button
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const footer = document.getElementById('footer');
+
+      // Listen for mouse movement on the document
+      document.addEventListener('mousemove', function (e) {
+        // Check if the mouse is close to the bottom of the screen
+        if (e.clientY > window.innerHeight - 50) {
+          // If yes, show the footer
+          footer.style.display = 'block';
+        } else {
+          // If no, hide the footer
+          footer.style.display = 'none';
+        }
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  </body>
+</html>
