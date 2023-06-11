@@ -340,9 +340,15 @@
 `;
 
         // Check if the event date has passed
-        if (new Date(event.date) < new Date()) {
-          eventElement.style.display = 'none';
-        }
+        var currentDate = new Date();
+  currentDate.setUTCHours(0, 0, 0, 0); // Set the time to midnight for accurate comparison
+
+  var eventEndTime = new Date(event.date);
+  eventEndTime.setUTCHours(24, 0, 0, 0);
+
+  if (currentDate > eventEndTime) {
+    eventElement.style.display = 'none';
+  }
 
         // Add the event element to the events container
         eventsContainer.appendChild(eventElement);
