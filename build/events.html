@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -22,7 +22,11 @@
     >
       <div class="flex md:flex-wrap items-center justify-between mx-auto p-4">
         <a href="index.html" class="flex items-center md:mb-4">
-          <img src="icon.png" class=" h-16 md:h-24 mr-3" alt="a treble clef surrounded by a celtic design" />
+          <img
+            src="icon.png"
+            class="h-16 md:h-24 mr-3"
+            alt="a treble clef surrounded by a celtic design"
+          />
           <!-- image from: https://www.pdclipart.org/displayimage.php?album=80&pos=96 -->
           <h1
             class="text-base text-xl md:text-2xl lg:text-3xl font-semibold whitespace-normal dark:text-white"
@@ -196,6 +200,12 @@
         name: 'Buzz Coffee House',
         address: '#12 - 4890 Rutherford Rd, Nanaimo, BC',
         facebook: 'https://www.facebook.com/BuzzCoffeeHouse/',
+      };
+      const countryClub = {
+        img: 'ccc.jpg',
+        name: 'Country Club Centre',
+        address: '3200 North Island Highway, Nanaimo, BC ',
+        facebook: 'https://www.facebook.com/countryclubcentre',
       };
       const noSession = {
         name: 'There will be no Session on this date',
@@ -372,7 +382,8 @@
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/1eh12cJys',
-        },{
+        },
+        {
           name: 'Irish Music Session @ Nanaimo Bakery & Cafe (all ages welcome)',
           date: new Date('2023-10-24'),
           time: '7:00pm - 9:00pm',
@@ -394,64 +405,68 @@
           facebookEvent: 'https://fb.me/e/9ruG986TU',
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
+          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
           date: new Date('2023-11-12'),
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/6bDS4AUn9',
-          
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
+          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
           date: new Date('2023-11-19'),
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/1iuKMwmZV',
         },
         {
-          name: 'Irish Music Session @ Nanaimo Bakery & Cafe (all ages welcome)',
+          name: 'Irish Music Session @ Nanaimo Bakery & Cafe <br> (all ages welcome)',
           date: new Date('2023-11-21'),
           time: '7:00pm - 9:00pm',
           venue: bakery,
           facebookEvent: 'https://fb.me/e/1p4ukKevd',
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
+          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
           date: new Date('2023-11-26'),
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/6EQtxTQh6',
         },
         {
-        name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
+          name: "Irish Music Session @ Country Club Centre <br> (all ages welcome) <br> You'll find us in the mall outside The Bee's Knee's Cafe",
+          date: new Date('2023-12-01'),
+          time: '6:00pm - 7:45pm',
+          venue: countryClub,
+        },
+        {
+          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
           date: new Date('2023-12-03'),
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/4uBSzAuFP',
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
+          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
           date: new Date('2023-12-10'),
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/14e6KPR0T',
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
+          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
           date: new Date('2023-12-17'),
           time: '4:30pm - 6:30pm',
           venue: nanaimoBar,
           facebookEvent: 'https://fb.me/e/upwUtuq53',
         },
         {
-          name: 'Irish Music Session @ Nanaimo Bakery & Cafe (all ages welcome)',
+          name: 'Irish Music Session @ Nanaimo Bakery & Cafe <br> (all ages welcome)',
           date: new Date('2023-12-19'),
           time: '7:00pm - 9:00pm',
           venue: bakery,
           facebookEvent: 'https://fb.me/e/4JjOiLwxc',
         },
-        
-        ];
+      ];
 
       // Get the container elements
       const eventsContainer = document.getElementById('events-container');
