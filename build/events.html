@@ -150,7 +150,7 @@
     >
       <div class="flex justify-between items-center w-full">
         <span class="text-sm text-[#4D5D53] sm:text-center dark:text-gray-400"
-          >© 2023
+          >© 2023-2024
           <a
             href="https://www.facebook.com/nanaimoirishmusic"
             class="hover:underline"
@@ -197,309 +197,55 @@
     <script>
       // JavaScript code to fetch and display events
       //define venue variables
+
       const nanaimoBar = {
-        img: '/src/img/nanaimobar.jpg',
-        name: 'The Nanaimo BAR',
-        address: '2-75 Front St, Nanaimo, BC',
-        facebook: 'https://www.facebook.com/thenanaimobar',
-      };
-      const bakery = {
-        img: '/src/img/bakery.png',
-        name: 'Nanaimo Bakery & Cafe',
-        address: '2025 Bowen Rd. Nanaimo, BC',
-        facebook: 'https://www.facebook.com/nanaimobakery',
-      };
-      const theBuzz = {
-        img: '/src/img/buzz.png',
-        name: 'Buzz Coffee House',
-        address: '#12 - 4890 Rutherford Rd, Nanaimo, BC',
-        facebook: 'https://www.facebook.com/BuzzCoffeeHouse/',
+        img: "/src/img/nanaimobar.jpg",
+        name: "The Nanaimo BAR",
+        address: "2-75 Front St, Nanaimo, BC",
+        facebook: "https://www.facebook.com/thenanaimobar",
       };
       const countryClub = {
-        img: '/src/img/ccc.jpg',
-        name: 'Country Club Centre',
-        address: '3200 North Island Highway, Nanaimo, BC ',
-        facebook: 'https://www.facebook.com/countryclubcentre',
-      };
-      const noSession = {
-        name: 'There will be no Session on this date',
-        address: '',
-        facebook: '',
+        img: "/src/img/ccc.jpg",
+        name: "Country Club Centre",
+        address: "3200 North Island Highway, Nanaimo, BC ",
+        facebook: "https://www.facebook.com/countryclubcentre",
       };
 
       // Define your events as an array of objects
       const events = [
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-05-14'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/AVNPU8bz',
-        // },
-
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-05-28'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/z0HnQSdf',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-06-04'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/2THM4X1FO',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-06-11'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/ufde3kOc',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-06-18'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/2QfYwy9gX',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-06-25'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/3GeT7fQBf',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-07-02'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/3GeT7fQBf',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-07-09'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/33Z5N9o0L',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-07-16'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/37Uygs90n',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-07-23'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-07-30'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/4sT9qUjd3',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-08-06'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/4kP9wAJRT',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-08-13'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/3PBySi27u',
-        // },
-        // {
-        //   name: 'Irish Music Session @ Buzz Coffee House (all ages welcome)',
-        //   date: new Date('2023-08-26'),
-        //   time: '2:30pm - 3:30pm',
-        //   venue: theBuzz,
-        //   facebookEvent: 'https://fb.me/e/1j033kLN2',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-08-27'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/15PGGsV1K',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-09-03'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/1uPSh6I3z',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-09-10'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/3HSeJPzoB',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-09-17'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/6bpBrSmUl',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-09-24'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/ApFapCzo',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-10-01'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/1vl01kqHj',
-        // },
-        // {
-        //   name: 'Irish Music Session @ Buzz Coffee House (all ages welcome)',
-        //   date: new Date('2023-10-07'),
-        //   time: '2:30pm - 3:30pm',
-        //   venue: theBuzz,
-        //   facebookEvent: 'https://fb.me/e/1pkg98FME',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-10-08'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/1oDbiU6r0',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-10-15'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/1aXhqTWhi',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-10-22'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/1eh12cJys',
-        // },
-        // {
-        //   name: 'Irish Music Session @ Nanaimo Bakery & Cafe (all ages welcome)',
-        //   date: new Date('2023-10-24'),
-        //   time: '7:00pm - 9:00pm',
-        //   venue: bakery,
-        //   facebookEvent: 'https://fb.me/e/1uDEY7zDF',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-10-29'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/2WKLjqUTj',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR (Adults 19+ only)',
-        //   date: new Date('2023-11-05'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/9ruG986TU',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-        //   date: new Date('2023-11-12'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/6bDS4AUn9',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-        //   date: new Date('2023-11-19'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/1iuKMwmZV',
-        // },
-        // {
-        //   name: 'Irish Music Session @ Nanaimo Bakery & Cafe <br> (all ages welcome)',
-        //   date: new Date('2023-11-21'),
-        //   time: '7:00pm - 9:00pm',
-        //   venue: bakery,
-        //   facebookEvent: 'https://fb.me/e/1p4ukKevd',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-        //   date: new Date('2023-11-26'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/6EQtxTQh6',
-        // },
-        // {
-        //   name: "Irish Music Session @ Country Club Centre <br> (all ages welcome) <br> You'll find us in the mall outside The Bee's Knee's Cafe",
-        //   date: new Date('2023-12-01'),
-        //   time: '6:00pm - 7:45pm',
-        //   venue: countryClub,
-        //   facebookEvent: 'https://fb.me/e/2ZCO4GjuG',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-        //   date: new Date('2023-12-10'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/14e6KPR0T',
-        // },
-        // {
-        //   name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-        //   date: new Date('2023-12-17'),
-        //   time: '4:30pm - 6:30pm',
-        //   venue: nanaimoBar,
-        //   facebookEvent: 'https://fb.me/e/upwUtuq53',
-        // },
-        // {
-        //   name: 'Irish Music Session @ Nanaimo Bakery & Cafe <br> (all ages welcome)',
-        //   date: new Date('2023-12-19'),
-        //   time: '7:00pm - 9:00pm',
-        //   venue: bakery,
-        //   facebookEvent: 'https://fb.me/e/4JjOiLwxc',
-        // },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-          date: new Date('2024-01-07'),
-          time: '4:30pm - 6:30pm',
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-01-07"),
+          time: "4:30pm - 6:30pm",
           venue: nanaimoBar,
-          facebookEvent: 'https://fb.me/e/1xlNKTsm4',
+          facebookEvent: "https://fb.me/e/1xlNKTsm4",
+          isSession: true,
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-          date: new Date('2024-01-14'),
-          time: '4:30pm - 6:30pm',
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-01-14"),
+          time: "4:30pm - 6:30pm",
           venue: nanaimoBar,
-          facebookEvent: 'https://fb.me/e/47Yu5xgHJ',
+          facebookEvent: "https://fb.me/e/47Yu5xgHJ",
+          isSession: true,
         },
         {
-          name: 'Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)',
-          date: new Date('2024-01-21'),
-          time: '4:30pm - 6:30pm',
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-01-21"),
+          time: "4:30pm - 6:30pm",
           venue: nanaimoBar,
-          facebookEvent: 'https://fb.me/e/43M2Tu1fT',
+          facebookEvent: "https://fb.me/e/43M2Tu1fT",
+          isSession: true,
         },
+        // {
+        //   date: new Date("2024-01-28"),
+        //   isSession: false,
+        // },
       ];
 
       // Get the container elements
-      const eventsContainer = document.getElementById('events-container');
-      const venuesContainer = document.getElementById('venues-container');
+      const eventsContainer = document.getElementById("events-container");
+      const venuesContainer = document.getElementById("venues-container");
 
       // Sort events by date (in reverse chronological order)
       events.sort(
@@ -509,58 +255,62 @@
       // Iterate through the events and add them to the page
       events.forEach((event) => {
         // Create a new element to hold the event information
-        const eventElement = document.createElement('div');
-        eventElement.classList.add('event');
+        const eventElement = document.createElement("div");
+        eventElement.classList.add("event");
 
         const eventDate = new Date(event.date);
         eventDate.setUTCHours(8);
 
-        const formattedDate = eventDate.toLocaleDateString('en-US', {
-          timeZone: 'America/Vancouver',
-          weekday: 'long',
-          month: 'long',
-          day: 'numeric',
-          year: 'numeric',
+        const formattedDate = eventDate.toLocaleDateString("en-US", {
+          timeZone: "America/Vancouver",
+          weekday: "long",
+          month: "long",
+          day: "numeric",
+          year: "numeric",
         });
+        // Check if it's a regular session or 'no session' day
+        if (event.isSession) {
+          // Regular session content
+          eventElement.innerHTML = `
+              <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
+        <div class="w-2/3 md:w-1/3">
+          <img src="${event.venue.img}" alt="${
+            event.venue.name
+          }" class="flex items-center justify-center md:pb-8 md:pt-8 md:pl-8"/>
+        </div>
+        <div class="w-full text-l md:text-xl pt-12 md:w-1/2 md:pl-4 mb-8 py-2">
+          <h2>${event.name}</h2>
+          <p>Date: ${formattedDate}</p>
+          <p>Time: ${event.time}</p>
+          <p>Venue: ${event.venue.name}</p>
+          <p>Address: ${event.venue.address}</p>
+          <p class="pb-8"><a href="${
+            event.venue.facebook
+          }" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">Visit ${
+            event.venue.name
+          } on Facebook</a></p>
+          ${
+            event.facebookEvent
+              ? `<p class="pb-8"><a href="${event.facebookEvent}" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">RSVP to the Facebook Event</a></p>`
+              : "<p>Facebook Event Coming Soon!</p>"
+          }
 
-        //     eventElement.innerHTML = `
-        // <h2>${event.name}</h2>
-        // <p>Date: ${formattedDate}</p>
-        //   <p>Time: ${event.time}</p>
-        //       <p>Venue: ${event.venue.name}</p>
-        //       <p>Address: ${event.venue.address}</p>
-        //        <p class="pb-8"><a href="${event.venue.facebook}" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">Visit ${event.venue.name} on Facebook</a></p>
-        //         <hr class="pb-8">
-        //         </div>
-        //     `;
-        eventElement.innerHTML = `
-        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
-  <div class="w-2/3 md:w-1/3">
-    <img src="${event.venue.img}" alt="${
-          event.venue.name
-        }" class="flex items-center justify-center md:pb-8 md:pt-8 md:pl-8"/>
-  </div>
-  <div class="w-full text-l md:text-xl pt-12 md:w-1/2 md:pl-4 mb-8 py-2">
-    <h2>${event.name}</h2>
-    <p>Date: ${formattedDate}</p>
-    <p>Time: ${event.time}</p>
-    <p>Venue: ${event.venue.name}</p>
-    <p>Address: ${event.venue.address}</p>
-    <p class="pb-8"><a href="${
-      event.venue.facebook
-    }" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">Visit ${
-          event.venue.name
-        } on Facebook</a></p>
-    ${
-      event.facebookEvent
-        ? `<p class="pb-8"><a href="${event.facebookEvent}" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">RSVP to the Facebook Event</a></p>`
-        : '<p>Facebook Event Coming Soon!</p>'
-    }
-    
-    </div>
-</div>
-<hr class="pb-8">
-`;
+          </div>
+      </div>
+      <hr class="pb-8">
+      `;
+        } else {
+          // 'No Session' day content
+          eventElement.innerHTML = `
+      <div class="flex flex-col justify-center items-center space-y-8">
+        <div class="w-full text-l md:text-xl pt-12 mb-8 py-2">
+          <p>Date: ${formattedDate}</p>
+          <p>Sorry, no Session on this date</p>
+        </div>
+      </div>
+      <hr class="pb-8">
+    `;
+        }
 
         // Check if the event date has passed
         var currentDate = new Date();
@@ -570,7 +320,7 @@
         eventEndTime.setUTCHours(24, 0, 0, 0);
 
         if (currentDate > eventEndTime) {
-          eventElement.style.display = 'none';
+          eventElement.style.display = "none";
         }
 
         // Add the event element to the events container
