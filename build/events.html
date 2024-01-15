@@ -237,10 +237,18 @@
           facebookEvent: "https://fb.me/e/43M2Tu1fT",
           isSession: true,
         },
-        // {
-        //   date: new Date("2024-01-28"),
-        //   isSession: false,
-        // },
+        {
+          name: "Irish Music Session @ Country Club Centre <br> All ages welcome!",
+          date: new Date("2024-01-27"),
+          time: "1:00pm - 3:00pm",
+          venue: countryClub,
+          facebookEvent: "https://fb.me/e/1ljs77uwG",
+          isSession: true,
+        },
+        {
+          date: new Date("2024-01-28"),
+          isSession: false,
+        },
       ];
 
       // Get the container elements
@@ -305,7 +313,7 @@
       <div class="flex flex-col justify-center items-center space-y-8">
         <div class="w-full text-l md:text-xl pt-12 mb-8 py-2">
           <p>Date: ${formattedDate}</p>
-          <p>Sorry, no Session on this date</p>
+          <p>Sorry, there will be no Session on this date.</p>
         </div>
       </div>
       <hr class="pb-8">
