@@ -210,6 +210,19 @@
         address: "3200 North Island Highway, Nanaimo, BC ",
         facebook: "https://www.facebook.com/countryclubcentre",
       };
+      const mapleSugar = {
+        img: "/src/img/msf.png",
+        name: "Nanaimo Maple Sugar Festival 2024",
+        address: "Beban Park Social Centre, 2300 Bowen Road, Nanaimo, BC",
+        facebook: "https://www.facebook.com/profile.php?id=100004835776067",
+        website: "https://msfnanaimo.org/",
+      };
+      const nanaimoBar2 = {
+        img: "/src/img/stpatnanbar.png",
+        name: "The Nanaimo BAR",
+        address: "2-75 Front St, Nanaimo, BC",
+        facebook: "https://www.facebook.com/thenanaimobar",
+      };
 
       // Define your events as an array of objects
       const events = [
@@ -273,7 +286,46 @@
           facebookEvent: "https://fb.me/e/1sZwm0wIY",
           isSession: true,
         },
-        
+        {
+          name: "Irish Music Session @ Maple Sugar Festival <br> All Ages Welcome",
+          date: new Date("2024-02-25"),
+          time: "12:00pm - 12:30pm",
+          venue: mapleSugar,
+          facebookEvent: "https://fb.me/e/4yMU1tPWZ",
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-02-25"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+          facebookEvent: "https://fb.me/e/6I7MMqbWZ",
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-03-03"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+          facebookEvent: "https://fb.me/e/1PoxXBC78",
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-03-10"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+          facebookEvent: "https://fb.me/e/1oW1txzMS",
+          isSession: true,
+        },
+        {
+          name: "St. Patty's Day <br> Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-03-17"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar2,
+          facebookEvent: "https://fb.me/e/7ZGt3fRoj",
+          isSession: true,
+        },
       ];
 
       // Get the container elements
@@ -326,6 +378,11 @@
             event.facebookEvent
               ? `<p class="pb-8"><a href="${event.facebookEvent}" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">RSVP to the Facebook Event</a></p>`
               : "<p>Facebook Event Coming Soon!</p>"
+          } 
+          ${
+            event.venue.website
+              ? `<p>Visit their Website for more information: <a href="${event.venue.website}" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">${event.venue.website}</a></p>`
+              : ""
           }
 
           </div>
