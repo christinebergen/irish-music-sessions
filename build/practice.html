@@ -270,6 +270,16 @@
           </div>
           <hr class="mt-16 w-3/4" />
           <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Mountain Road - Reel</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/RHlPnRJ8sh0?si=OWV4tpv_hvvM_oMa"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
             <h2 class="text-2xl text-center pb-8">Drowsy Maggie - Reel</h2>
             <div class="relative overflow-hidden" style="padding-top: 56.25%">
               <iframe
@@ -364,16 +374,6 @@
           id="polkas"
           class="hidden flex flex-col justify-center items-center md:mt-10"
         >
-          <div class="w-full sm:w-3/4 md:w-1/2">
-            <h2 class="text-2xl text-center pb-8">The Mountain Road - Polka</h2>
-            <div class="relative overflow-hidden" style="padding-top: 56.25%">
-              <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/RHlPnRJ8sh0?si=OWV4tpv_hvvM_oMa"
-              ></iframe>
-            </div>
-          </div>
-          <hr class="mt-16 w-3/4 pb-16" />
           <div class="w-full sm:w-3/4 md:w-1/2">
             <h2 class="text-2xl text-center pb-8">
               The Rakes of Mallow - Polka
@@ -567,12 +567,12 @@
         const sections = document.querySelectorAll("#video-content > div");
         const headers = document.querySelectorAll("#tab-headers > h2"); // Assuming your headers are <h2> inside #tab-headers
 
-          sections.forEach(section => {
-            if (section.id === sectionId) {
-                section.classList.remove("hidden");
-            } else {
-                section.classList.add("hidden");
-            }
+        sections.forEach((section) => {
+          if (section.id === sectionId) {
+            section.classList.remove("hidden");
+          } else {
+            section.classList.add("hidden");
+          }
         });
 
         headers.forEach((header) => {
@@ -586,9 +586,9 @@
           }
         });
       }
-      document.addEventListener('DOMContentLoaded', function() {
-        toggleDisplay('last10'); // Set 'Recently Added' as the active tab on page load
-    });
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleDisplay("last10"); // Set 'Recently Added' as the active tab on page load
+      });
     </script>
   </body>
 </html>
