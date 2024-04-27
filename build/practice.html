@@ -136,205 +136,373 @@
     <div
       class="flex flex-col items-center justify-center pt-16 text-xl font-bold pb-32"
     >
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">The Arran Boat Song - Waltz</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/G5cZDeX3j0Y?si=3hX-cRCNK4QV8IdN"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">The Mountain Road - Polka</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/RHlPnRJ8sh0?si=OWV4tpv_hvvM_oMa"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">The Lilting Banshee - Jig</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/VNJFbR3hhNY?si=jZyGtQsd1SQZ_zBQ"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">The Rakes of Mallow - Polka</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/j4u7pPJEiyE?si=s81oPJ9GY7xYooxJ"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">Drowsy Maggie - Reel</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/M0MGtCmLyGU?si=LCUjui4iu9--tEer"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">Morrison's Jig</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/CldS-3WVnBs?si=AwvLVGeo2x1NX42U"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">John Ryan's - Polka</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/-kHR0UPFV5k?si=pVyO-V06rlFSzOnR"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">St. Anne's Reel</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/er1MHUMkhBg?si=BrTCDpeiJhreAMdU"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">
-          Britches Full of Stitches - Polka
+      <div id="tab-headers" class="flex justify-around flex-col md:flex-row">
+        <h2
+          class="cursor-pointer p-2 m-2 border-2 border-[#CEE1D5] text-center"
+          onclick="toggleDisplay('jigs')"
+        >
+          Jigs, Slip Jigs, & Slide Jigs
         </h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/5Ezh4RmP9c8?si=4daCauatdvs5Ja5a"
-          ></iframe>
-        </div>
+        <h2
+          class="cursor-pointer p-2 m-2 border-2 border-[#CEE1D5] text-center"
+          onclick="toggleDisplay('reels')"
+        >
+          Reels
+        </h2>
+        <h2
+          class="cursor-pointer p-2 m-2 border-2 border-[#CEE1D5] text-center"
+          onclick="toggleDisplay('hornpipes')"
+        >
+          Hornpipes
+        </h2>
+        <h2
+          class="cursor-pointer p-2 m-2 border-2 border-[#CEE1D5] text-center"
+          onclick="toggleDisplay('waltzes')"
+        >
+          Waltzes & Slower Songs
+        </h2>
+        <h2
+          class="cursor-pointer p-2 m-2 border-2 border-[#CEE1D5] text-center"
+          onclick="toggleDisplay('polkas')"
+        >
+          Polkas
+        </h2>
+        <h2
+          class="cursor-pointer p-2 m-2 border-2 border-[#CEE1D5] text-center"
+          onclick="toggleDisplay('last10')"
+        >
+          Recently Added
+        </h2>
       </div>
-      <hr class="mt-16 w-3/4 pb-16" />
+      <div id="video-content" class="mt-4 w-full">
+        <div
+          id="jigs"
+          class="hidden flex flex-col justify-center items-center md:mt-10"
+        >
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Swallowtail - Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/VNeU-nGho8o?si=IYfM_JUP4Evo0lOD"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Butterfly - Slip Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/zyXdfRl6IO4?si=XmJcq7N1smoiEVBg"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Lilting Banshee - Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/VNJFbR3hhNY?si=jZyGtQsd1SQZ_zBQ"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Morrison's Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/CldS-3WVnBs?si=AwvLVGeo2x1NX42U"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              The Connaughtman's Rambles - Jig
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/wBQLMsvOe-o?si=Pi4Ig7P_3mU7pYz_"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              Kings of Kerry - Slide Jig
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/tPH_5vW679s?si=F4lTKCW6T38cA9Q6"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Kesh - Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/3Kbl75gBY1c?si=oESR8sVhuOabMwQv"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+        </div>
 
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">
-          The Connaughtman's Rambles - Jig
-        </h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/wBQLMsvOe-o?si=Pi4Ig7P_3mU7pYz_"
-          ></iframe>
+        <div
+          id="reels"
+          class="hidden flex flex-col justify-center items-center md:mt-10"
+        >
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Stan Rogers - Reel</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/evlFSQ-zwqo?si=Vv0CmreKP5JmClZT"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Drowsy Maggie - Reel</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/M0MGtCmLyGU?si=LCUjui4iu9--tEer"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">St. Anne's Reel</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/er1MHUMkhBg?si=BrTCDpeiJhreAMdU"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              Whiskey Before Breakfast - Reel
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/4xKEJa_hwDM?si=Ls2y9v_1pmPUlPZ-"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+        </div>
+
+        <div
+          id="hornpipes"
+          class="hidden flex flex-col justify-center items-center md:mt-10"
+        >
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              Boys Of Blue Hill - Hornpipe
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/_Fce8_tMDGk?si=0SKgpfK_r2VxlQmi"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Harvest Home - Hornpipe</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/3JomJ3LHdms?si=COFs3AB1XQGqitew"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+        </div>
+
+        <div
+          id="waltzes"
+          class="hidden flex flex-col justify-center items-center md:mt-10"
+        >
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              The Arran Boat Song - Waltz
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/G5cZDeX3j0Y?si=3hX-cRCNK4QV8IdN"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Star Of The County Down</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/BeA2v5szSVE?si=9i9d_39Uw0Aq3z_4"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+        </div>
+
+        <div
+          id="polkas"
+          class="hidden flex flex-col justify-center items-center md:mt-10"
+        >
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Mountain Road - Polka</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/RHlPnRJ8sh0?si=OWV4tpv_hvvM_oMa"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              The Rakes of Mallow - Polka
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/j4u7pPJEiyE?si=s81oPJ9GY7xYooxJ"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">John Ryan's - Polka</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/-kHR0UPFV5k?si=pVyO-V06rlFSzOnR"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              Britches Full of Stitches - Polka
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/5Ezh4RmP9c8?si=4daCauatdvs5Ja5a"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Mairi's Wedding - Polka</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/F4z9VvTwS1E?si=0gpYr8ufNKMuex-E"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              The Ballydesmond (Andy Boyle's) - Polka
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/_vrNKmBtRRY?si=QbS4Tr-I4HLEEf1p"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">I'll Tell Me Ma - Polka</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/oKM-itK4dN8?si=4M-GZdgu1_bwEh_I"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4 pb-16" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              The Kerry/Peg Ryan's - Polka
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/PB3WrvCbc4A?si=H8wPbnS8zODEHmEY"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+        </div>
+
+        <div
+          id="last10"
+          class="flex flex-col justify-center items-center md:mt-10"
+        >
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Swallowtail - Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/VNeU-nGho8o?si=IYfM_JUP4Evo0lOD"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">
+              Boys Of Blue Hill - Hornpipe
+            </h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/_Fce8_tMDGk?si=0SKgpfK_r2VxlQmi"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">Stan Rogers - Reel</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/evlFSQ-zwqo?si=Vv0CmreKP5JmClZT"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
+
+          <div class="w-full sm:w-3/4 md:w-1/2">
+            <h2 class="text-2xl text-center pb-8">The Butterfly - Slip Jig</h2>
+            <div class="relative overflow-hidden" style="padding-top: 56.25%">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/zyXdfRl6IO4?si=XmJcq7N1smoiEVBg"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="mt-16 w-3/4" />
         </div>
       </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">Mairi's Wedding - Polka</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/F4z9VvTwS1E?si=0gpYr8ufNKMuex-E"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">Harvest Home - Hornpipe</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/3JomJ3LHdms?si=COFs3AB1XQGqitew"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">Kings of Kerry - Slide Jig</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/tPH_5vW679s?si=F4lTKCW6T38cA9Q6"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">
-          The Ballydesmond (Andy Boyle's) - Polka
-        </h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/_vrNKmBtRRY?si=QbS4Tr-I4HLEEf1p"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">Star Of The County Down</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/BeA2v5szSVE?si=9i9d_39Uw0Aq3z_4"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">I'll Tell Me Ma - Polka</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/oKM-itK4dN8?si=4M-GZdgu1_bwEh_I"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">
-          Whiskey Before Breakfast - Reel
-        </h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/4xKEJa_hwDM?si=Ls2y9v_1pmPUlPZ-"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">The Kesh - Jig</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/3Kbl75gBY1c?si=oESR8sVhuOabMwQv"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4 pb-16" />
-      <div class="w-full sm:w-3/4 md:w-1/2">
-        <h2 class="text-2xl text-center pb-8">The Kerry/Peg Ryan's - Polka</h2>
-        <div class="relative overflow-hidden" style="padding-top: 56.25%">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/PB3WrvCbc4A?si=H8wPbnS8zODEHmEY"
-          ></iframe>
-        </div>
-      </div>
-      <hr class="mt-16 w-3/4" />
 
       <p class="text-center w-3/4 text-xl font-semibold pt-16 italic">
         We respectfully acknowledge that we gather on the traditional and
@@ -393,5 +561,34 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function toggleDisplay(sectionId) {
+        const sections = document.querySelectorAll("#video-content > div");
+        const headers = document.querySelectorAll("#tab-headers > h2"); // Assuming your headers are <h2> inside #tab-headers
+
+          sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.remove("hidden");
+            } else {
+                section.classList.add("hidden");
+            }
+        });
+
+        headers.forEach((header) => {
+          // Check if the header corresponds to the clicked section
+          if (header.getAttribute("onclick").includes(sectionId)) {
+            header.classList.add("bg-[#6E8576]", "text-white"); // Add active styles
+            header.classList.remove("border-[#CEE1D5]"); // Optionally remove some other style
+          } else {
+            header.classList.remove("bg-[#6E8576]", "text-white"); // Remove active styles
+            header.classList.add("border-[#CEE1D5]"); // Reset to normal style
+          }
+        });
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        toggleDisplay('last10'); // Set 'Recently Added' as the active tab on page load
+    });
+    </script>
   </body>
 </html>
