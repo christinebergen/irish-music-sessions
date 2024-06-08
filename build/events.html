@@ -190,6 +190,21 @@
               </a>
             </div>
           </li>
+          <li>
+            <div class="flex flex-wrap justify-center gap-2">
+              <a
+                href="https://www.youtube.com/@NanaimoIrishMusicSession-hv3jz"
+                target="_blank"
+              >
+                <button>
+                  <img
+                    src="/src/img/youtube.png"
+                    alt="YouTube Icon from https://icons8.com/icons/set/youtube by https://icons8.com"
+                  />
+                </button>
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </footer>
@@ -414,6 +429,63 @@
 
           isSession: true,
         },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-06-09"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-06-16"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-06-23"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-06-30"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-07-07"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-07-14"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-07-28"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        
       ];
 
       // Get the container elements
@@ -465,7 +537,7 @@
           ${
             event.facebookEvent
               ? `<p class="pb-8"><a href="${event.facebookEvent}" target="_blank" class="font-medium text-blue-400 underline dark:text-blue-500 hover:no-underline">RSVP to the Facebook Event</a></p>`
-              : "<p>Facebook Event Coming Soon!</p>"
+              : ""
           } 
           ${
             event.venue.website
