@@ -238,6 +238,12 @@
         address: "2-75 Front St, Nanaimo, BC",
         facebook: "https://www.facebook.com/thenanaimobar",
       };
+      const curling = {
+        img: "/src/img/curl.png",
+        name: "Nanaimo Curling Club",
+        address: "106 Wall St, Nanaimo, BC",
+        facebook: "https://www.facebook.com/nanaimocurling.centre/",
+      };
 
       // Define your events as an array of objects
       const events = [
@@ -533,7 +539,107 @@
 
           isSession: true,
         },
-        
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-09-15"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-09-22"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-09-29"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-10-06"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-10-10"),
+          time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-10-13"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-10-17"),
+          time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-10-20"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-10-24"),
+          time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-10-27"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "No Beginner Session",
+          date: new Date("2024-10-31"),
+          isSession: false,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-11-03"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-11-07"),
+          time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
       ];
 
       // Get the container elements
@@ -565,13 +671,13 @@
         if (event.isSession) {
           // Regular session content
           eventElement.innerHTML = `
-              <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
+              <div class="flex flex-col md:flex-row justify-center items-center">
         <div class="w-2/3 md:w-1/3">
           <img src="${event.venue.img}" alt="${
             event.venue.name
           }" class="flex items-center justify-center md:pb-8 md:pt-8 md:pl-8"/>
         </div>
-        <div class="w-full text-l md:text-xl pt-12 md:w-1/2 md:pl-4 mb-8 py-2">
+        <div class="w-full text-lg md:text-xl pt-12 md:w-1/2 md:pl-4 mb-8 py-2">
           <h2>${event.name}</h2>
           <p>Date: ${formattedDate}</p>
           <p>Time: ${event.time}</p>
