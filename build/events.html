@@ -32,7 +32,7 @@
   </head>
   <body class="bg-[#4D5D53] text-[#CEE1D5]">
     <nav
-      class="bg-white text-[#4D5D53] p-8 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+      class="bg-white text-[#4D5D53] p-8 fixed w-full z-20 top-0 left-0 border-b border-gray-200"
     >
       <div class="flex md:flex-wrap items-center justify-between mx-auto p-4">
         <a href="index.html" class="flex items-center md:mb-4">
@@ -41,18 +41,17 @@
             class="h-16 md:h-24 mr-3"
             alt="a treble clef surrounded by a celtic design"
           />
-          <!-- image from: https://www.pdclipart.org/displayimage.php?album=80&pos=96 -->
+
           <h1
-            class="text-base text-xl md:text-2xl lg:text-3xl font-semibold whitespace-normal dark:text-white"
+            class="text-base text-xl md:text-2xl lg:text-3xl font-semibold whitespace-normal"
           >
             Nanaimo Irish Music Sessions
           </h1>
         </a>
-
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"
-          class="md:hidden inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="md:hidden inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-sticky"
           aria-expanded="false"
         >
@@ -77,48 +76,80 @@
         id="navbar-sticky"
       >
         <ul
-          class="flex flex-col p-4 text-l lg:text-xl md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col p-4 text-l lg:text-xl md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white"
         >
           <li>
             <a
               href="index.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >Home</a
             >
           </li>
           <li>
             <a
               href="about.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >About Nanaimo Irish Music Sessions</a
             >
           </li>
           <li>
             <a
               href="events.html"
-              class="block py-2 pl-3 pr-4 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              aria-current="page"
+              class="block py-2 pl-3 pr-4 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >Upcoming Sessions</a
             >
           </li>
           <li>
             <a
               href="tunebook.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >Download Our Tune Book</a
             >
           </li>
           <li>
             <a
               href="practice.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >Practice Videos</a
             >
+          </li>
+          <li class="relative">
+            <button
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              aria-current="page"
+              onclick="toggleDropdown()"
+            >
+              Instruments ▼
+            </button>
+
+            <!-- Dropdown menu -->
+            <div
+              id="dropdown"
+              class="hidden absolute bg-white shadow-lg rounded-lg mt-2"
+            >
+              <ul class="py-2 text-sm text-gray-700">
+                <li>
+                  <a
+                    href="instruments.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Traditional Irish Instruments</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="forsale.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Instruments for Sale</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <a
               href="contact.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              aria-current="page"
               >Contact Us</a
             >
           </li>
@@ -133,79 +164,129 @@
       />
     </div>
     <div class="flex flex-col items-center justify-center text-center">
+      <div
+        id="special-event"
+        class="text-center text-[#4D5D53] mb-8 bg-[#CEE1D5] p-6 rounded-lg w-full md:w-3/4 mt-10"
+      >
+        <h2 class="text-3xl font-semibold underline mb-4">
+          Special Event: The Darkest Midnight in December
+        </h2>
+        <p>
+          Experience the magic of an Irish Christmas with Anna and friends in
+          this special concert performance.
+        </p>
+        <div class="flex flex-col justify-center items-center">
+          <!-- Responsive image -->
+          <div class="relative flex items-center justify-center">
+            <img
+              src="/src/img/concert.jpg"
+              alt="Celtic Concert at St. Philip Anglican Church"
+              class="w-full md:w-3/4 flex items-center justify-center hidden md:block rounded-lg shadow-lg"
+            />
+            <img
+              src="/src/img/concert2.jpg"
+              alt="Celtic Concert at St. Philip Anglican Church"
+              class="flex items-center justify-center block md:hidden rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Event details -->
+          <div class="w-full text-lg md:text-2xl pt-12 mb-8 py-2">
+            <p><strong>Date:</strong> Saturday, December 21, 2024</p>
+            <p><strong>Time:</strong> 7:00 PM - 9:00 PM</p>
+            <p><strong>Venue:</strong> St. Philip Anglican Church Cedar</p>
+            <p><strong>Address:</strong> 1797 Cedar Rd, Nanaimo, BC</p>
+            <p><strong>Tickets:</strong> $25</p>
+            <p>
+              Email
+              <a
+                href="mailto:Robert.Pepper-Smith@viu.ca"
+                class="text-blue-400 underline hover:text-blue-700"
+              >
+                Robert.Pepper-Smith@viu.ca
+              </a>
+              to purchase tickets.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <h1 class="text-4xl p-10 underline">Upcoming Sessions</h1>
       <div id="events-container" class="'text-xl font-semibold"></div>
-
-      <p class="text-center w-3/4 text-xl font-semibold pt-16 italic">
-        We respectfully acknowledge that we gather on the traditional and
-        unceded territories of the Coast Salish peoples, including the
-        territories of the Snuneymuxw, Snaw-naw-as, and Stzuminus First Nations.
-      </p>
     </div>
     <div class="pb-24"></div>
 
     <footer
       id="footer"
-      class="bottom-0 left-0 z-20 w-full p-2 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between dark:bg-gray-800 dark:border-gray-600"
+      class="bottom-0 left-0 z-20 w-full p-2 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between"
     >
-      <div class="flex justify-between items-center w-full">
-        <span class="text-sm text-[#4D5D53] sm:text-center dark:text-gray-400"
-          >© 2023-2024
-          <a
-            href="https://www.facebook.com/nanaimoirishmusic"
-            class="hover:underline"
-            >Nanaimo Irish Music Sessions</a
-          >. All Rights Reserved.
-        </span>
-        <ul
-          class="flex flex-wrap items-center mt-2 md:mt-4 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+      <div class="flex flex-col justify-between items-center w-full">
+        <div class="flex flex-col justify-center text-center items-center">
+          <hr class="pb-8 w-3/4" />
+          <p class="w-3/4 text-xl text-[#4D5D53] font-semibold pt-12 italic">
+            We respectfully acknowledge that we gather on the traditional and
+            unceded territories of the Coast Salish peoples, including the
+            territories of the Snuneymuxw, Snaw-naw-as, and Stzuminus First
+            Nations.
+          </p>
+        </div>
+        <div class="pb-10"></div>
+        <div
+          class="flex justify-between items-center flex-col md:flex-row w-full px-4 py-2 mb-4"
         >
-          <li>
-            <div class="flex flex-wrap justify-center gap-2">
-              <a
-                href="https://www.facebook.com/nanaimoirishmusic"
-                target="_blank"
-              >
-                <button>
+          <!-- Left Section -->
+          <div class="text-lg text-[#4D5D53] font-bold">
+            © 2023-2024
+            <a
+              href="https://www.facebook.com/nanaimoirishmusic"
+              class="hover:underline"
+            >
+              Nanaimo Irish Music Sessions
+            </a>
+            . All Rights Reserved.
+          </div>
+
+          <!-- Right Section -->
+          <div>
+            <ul class="flex space-x-4">
+              <li>
+                <a
+                  href="https://www.facebook.com/nanaimoirishmusic"
+                  target="_blank"
+                >
                   <img
                     src="/src/img/facebook.png"
                     alt="Facebook Icon from https://icons8.com/icon/21166/facebook by https://icons8.com"
+                    class="w-12 h-12"
                   />
-                </button>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="flex flex-wrap justify-center gap-2">
-              <a
-                href="https://www.instagram.com/nanaimoirishmusic/"
-                target="_blank"
-              >
-                <button>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/nanaimoirishmusic/"
+                  target="_blank"
+                >
                   <img
                     src="/src/img/insta.png"
                     alt="Instagram Icon from https://icons8.com/icon/Xy10Jcu1L2Su/instagram by https://icons8.com"
+                    class="w-12 h-12"
                   />
-                </button>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="flex flex-wrap justify-center gap-2">
-              <a
-                href="https://www.youtube.com/@NanaimoIrishMusicSession-hv3jz"
-                target="_blank"
-              >
-                <button>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@NanaimoIrishMusicSession-hv3jz"
+                  target="_blank"
+                >
                   <img
                     src="/src/img/youtube.png"
                     alt="YouTube Icon from https://icons8.com/icons/set/youtube by https://icons8.com"
+                    class="w-12 h-12"
                   />
-                </button>
-              </a>
-            </div>
-          </li>
-        </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -243,6 +324,12 @@
         name: "Nanaimo Curling Club",
         address: "106 Wall St, Nanaimo, BC",
         facebook: "https://www.facebook.com/nanaimocurling.centre/",
+      };
+      const church = {
+        img: "/src/img/concert.jpg",
+        name: "St. Philip Anglican Church Cedar",
+        address: "1797 Cedar Rd, Nanaimo, BC",
+        website: "https://www.stphilipcedar.ca/",
       };
 
       // Define your events as an array of objects
@@ -681,9 +768,81 @@
           isSession: true,
         },
         {
-          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
           date: new Date("2024-11-28"),
+
+          isSession: false,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-12-01"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-12-05"),
           time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-12-08"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-12-12"),
+          time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-12-15"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          name: "Beginner Practice Session <br> Nanaimo Curling Club Lounge (upstairs) <br> All ages welcome - Musicians Only",
+          date: new Date("2024-12-19"),
+          time: "5:00pm - 7:00pm",
+          venue: curling,
+
+          isSession: true,
+        },
+
+        {
+          name: "Irish Music Session @ The Nanaimo BAR <br> (Adults 19+ only)",
+          date: new Date("2024-12-22"),
+          time: "4:30pm - 6:30pm",
+          venue: nanaimoBar,
+
+          isSession: true,
+        },
+        {
+          date: new Date("2024-12-26"),
+
+          isSession: false,
+        },
+        {
+          date: new Date("2024-12-29"),
+
+          isSession: false,
+        },
+        {
+          name: "Musician's Holiday Party - All Musicians from both sessions are welcome! <br><br>We are planning for potluck-style appetizers/treats, so please bring something to share. <br><br>We will visit and eat from 5-6pm, and run a mixed session from 6-8pm.<br><br>",
+          date: new Date("2025-01-02"),
+          time: "5:00pm - 8:00pm",
           venue: curling,
 
           isSession: true,
@@ -778,6 +937,12 @@
         // Add the event element to the events container
         eventsContainer.appendChild(eventElement);
       });
+    </script>
+    <script>
+      function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown");
+        dropdown.classList.toggle("hidden");
+      }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
